@@ -3,5 +3,6 @@
     "env": {
       "GO_BUILD_FLAGS": "-ldflags '-s -w'"
     }
-  }
+  },
+  "rewrites": [{ "source": "/controllers/(.*)", "destination": "./main.go" }]
 }
